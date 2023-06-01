@@ -4,7 +4,7 @@ import users from './users';
 import msgs from './msgs';
 
 const app: Application = express();
-const port: number = 4000;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
